@@ -1,89 +1,120 @@
-*{
-    color: #fff
-    
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  color: transparent;
 }
-#caixa{
-    display: center;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
-    width: 18vw;
-    height: 40vh;
-    background-color: transparent;
-    border-radius: 20px;
-    border: 2px solid rgb(255, 255, 255, 0.5);
-    backdrop-filter: blur(45px);
-    position: relative;
-    padding : auto;
+.label-float {
+  margin: 30px;
 }
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-position: center;
-    background-image: url('dkqli6cm.bmp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 100vh;
+.label-float input {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  width: 15vw;
+  font-size: 1.3rem;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-appearance: none;
+  border-radius: 0;
+  background-color: transparent;
+}
 
+.label-float input:focus {
+  border-bottom: 2px solid #3951b2;
 }
-foms{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.input{
-    margin-top: 25px;
-    background: transparent;
-    outline: none;
-}
-a{
-    text-decoration: none;
-}
-button{
-    width: 10vw;
-    height: 3.5vh;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    border: none;
-    font-size: 1rem;
-    border-radius: 40PX;
-    color: black
-    /* background-color: #fff; */
-}
-h1{
-    font-size: 3rem;
-    color: #fff;
-    text-align: center;
-}
-.inp{
-    border: 0;
-    border-bottom: 2px solid #fff ;
-    outline: 0;
-    width: 15vw;
-    color: #fff;
-    background: transparent;
 
+.label-float input::placeholder {
+  color: transparent;
+}
 
+.label-float label {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: o;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
 }
-.inp::placeholder{
-    color: transparent;
-    
-}
-.label{
-    position: absolute;
-    font-size: 1rem;
-    color: #fff;
-    transition: 0.2s;
-    display: center;
-    
-}
-.inp:placeholder-shown ~ .label{
-    top: 20px;
-    cursor: text;
-    font-size: 1.0rem;
-    
 
+.label-float input:required:invalid + label {
+  color: #fff;
+}
+.label-float input:focus:required:invalid {
+  border-bottom: 2px solid red;
+}
+.label-float input:required:invalid + label:before {
+  content: "*";
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label {
+  font-size: 1rem;
+  margin-top: 0;
+  color: #fff;
+}
+* {
+  color: #fff;
+  font-family: "Crimson Text", serif;
+}
+
+#caixa {
+  display: center;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  width: 22vw;
+  height: 53vh;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(45px);
+  position: relative;
+  padding: 15px;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-image: url("dkqli6cm.bmp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+foms {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  width: 10vw;
+  height: 3.7vh;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  border: none;
+  font-size: 1rem;
+  border-radius: 40px;
+  color: black;
+  /* background-color: #fff; */
+}
+h1 {
+  margin: 15px;
+
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+}
+.input {
+  margin: 30px;
+}
+text {
+  font-size: 0.7rem;
 }
