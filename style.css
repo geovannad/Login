@@ -1,0 +1,89 @@
+*{
+    color: #fff
+    
+}
+#caixa{
+    display: center;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    width: 18vw;
+    height: 40vh;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(45px);
+    position: relative;
+    padding : auto;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-image: url('dkqli6cm.bmp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+foms{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input{
+    margin-top: 25px;
+    background: transparent;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    width: 10vw;
+    height: 3.5vh;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: none;
+    font-size: 1rem;
+    border-radius: 40PX;
+    color: black
+    /* background-color: #fff; */
+}
+h1{
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+}
+.inp{
+    border: 0;
+    border-bottom: 2px solid #fff ;
+    outline: 0;
+    width: 15vw;
+    color: #fff;
+    background: transparent;
+
+
+}
+.inp::placeholder{
+    color: transparent;
+    
+}
+.label{
+    position: absolute;
+    font-size: 1rem;
+    color: #fff;
+    transition: 0.2s;
+    display: center;
+    
+}
+.inp:placeholder-shown ~ .label{
+    top: 20px;
+    cursor: text;
+    font-size: 1.0rem;
+    
+
+}
